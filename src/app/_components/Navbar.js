@@ -15,7 +15,7 @@ export default function Header() {
             className="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80" 
             aria-label="Preline"
           >
-           Indra Hospital
+           Indra Clinic
           </Link>
         </div>
 

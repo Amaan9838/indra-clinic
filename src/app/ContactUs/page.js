@@ -1,7 +1,6 @@
 // import React from "react";
 // import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { FaRegClock } from "react-icons/fa";
-import { SlNote } from "react-icons/sl";
 import { CiStethoscope } from "react-icons/ci";
 import { LuPhoneCall } from "react-icons/lu";
 import { BiMailSend } from "react-icons/bi";

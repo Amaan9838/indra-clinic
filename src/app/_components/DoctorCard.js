@@ -14,6 +14,7 @@ const DoctorCard = () => {
         { icon: <FaInstagram size={20} />, link: '#' },
         { icon: <FaLinkedinIn size={20} />, link: '#' },
       ],
+      link:'/doctor'
     },
     {
       name: 'Dr. Pramod Singh',
@@ -25,6 +26,7 @@ const DoctorCard = () => {
         { icon: <FaInstagram size={20} />, link: '#' },
         { icon: <FaLinkedinIn size={20} />, link: '#' },
       ],
+      link:'/doctor'
     },
     {
       name: 'Dr. Sushil Kumar',
@@ -36,6 +38,7 @@ const DoctorCard = () => {
         { icon: <FaInstagram size={20} />, link: '#' },
         { icon: <FaLinkedinIn size={20} />, link: '#' },
       ],
+      link:'/doctor'
     },
   ];
 
@@ -73,9 +76,9 @@ const DoctorCard = () => {
                 </div>
               )}
               <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-900">
+                <a href={doctor.link} className="text-xl font-bold text-blue-900 underline">
                   {doctor.name}
-                </h3>
+                </a>
                 <p className="text-sm text-gray-600">{doctor.role}</p>
                 <p className="text-xs text-gray-500">{doctor.degree}</p>
               </div>
