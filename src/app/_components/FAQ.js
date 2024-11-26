@@ -1,7 +1,10 @@
-'use client';
-import React, { useState } from "react";
+'use client'
+import { useState } from "react";
+import {FaPlusCircle, FaMinusCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { CiStethoscope } from "react-icons/ci";
+import { LuPhoneCall } from "react-icons/lu";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const faqs = [
   {
@@ -26,41 +29,86 @@ const faqs = [
   },
 ];
 
-const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(0);
 
-  const toggleAccordion = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+export default function FAQ() {
+ 
+const [openIndex, setOpenIndex] = useState(0);
+
+const toggleAccordion = (index) => {
+  setOpenIndex(openIndex === index ? null : index);
+};
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center px-36 py-12 bg-white">
-      {/* Left Section */}
-      <div className="md:w-1/2 px-4">
-     <div className="flex justify-start items-center text-blue-400 font-bold gap-0.5"><CiStethoscope className="w-6 h-6"/> <h2 className="">FAQ</h2></div>
-        <h2 className="text-[40px] font-bold text-black mb-6">
+    <section className="bg-[#0d1128] text-white py-10 px-4 sm:px-8">
+      <div className="container mx-auto flex flex-col lg:flex-row gap-4 lg:gap-8">
+        {/* Left Section */}
+        <div className="flex flex-col justify-center sm:w-1/2 w-full gap-4">
+          <div className="relative">
+            <img
+              src="/doctor_consult.png"
+              alt="Doctor consulting patient"
+              className="rounded-lg shadow-lg w-[550px]"
+            />
+            
+          </div>
+          <ul className="space-y-2 mt-4 ml-4">
+            <li className="flex items-center space-x-1">
+              <span className="text-blue-500"><MdKeyboardDoubleArrowRight size={25}/></span>
+              <span className="text-slate-200">Appointment Scheduling and Cancellations</span>
+            </li>
+            <li className="flex items-center space-x-1">
+            <span className="text-blue-500"><MdKeyboardDoubleArrowRight size={25}/></span>
+            <span className="text-slate-200">Insurance and Payment Information</span>
+            </li>
+            <li className="flex items-center space-x-1">
+              <span className="text-blue-500"><MdKeyboardDoubleArrowRight size={25}/></span>
+              <span className="text-slate-200">Patient Privacy and Data Security</span>
+            </li>
+          </ul>
+          <div className="flex flex-row gap-4">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-1">
+              Get in Touch Now &#x2022;
+            </button>
+            <div className="flex items-center space-x-3">
+              <div className="bg-white text-blue-500 rounded-full p-3 border-2 border-blue-500">
+                <LuPhoneCall size={25}/>
+              </div>
+              <div>
+                <p>Call Us Now!</p>
+                <p className="font-bold">+91 987 9874 985</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Section */}
+        <div className="flex flex-col justify-center sm:w-1/2 w-full gap-4">
+
+        <div className="flex justify-start items-center text-blue-400 font-bold gap-0.5"><CiStethoscope className="w-6 h-6"/> <h2 className="">FAQ</h2></div>
+        <h2 className="sm:text-[40px] text-3xl font-bold text-white mb-6">
           Your Health Questions Answered Here
         </h2>
         <div>
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-b border-gray-200 mb-4 cursor-pointer"
+              className=" mb-4 cursor-pointer bg-white rounded-t-3xl rounded-b-2xl"
             >
               <div
-                className="flex justify-between items-center py-4"
+                className={`flex justify-start gap-4 items-center py-4   ${openIndex === index ? 'bg-blue-500' :'bg-white'  } px-8 rounded-2xl`}
                 onClick={() => toggleAccordion(index)}
               >
-                <h3 className="text-lg font-medium text-black">
-                  {faq.question}
-                </h3>
                 <motion.div
                   initial={{ rotate: 0 }}
-                  animate={{ rotate: openIndex === index ? 90 : 0 }}
-                  className="text-xl text-blue-500"
+                  animate={{ rotate: openIndex === index ? 180 : 0 }}
+                  className={`text-xl ${openIndex === index ? 'text-white' : 'text-blue-500' }`}
                 >
-                  ➕
+                 {openIndex === index ?  <FaMinusCircle/> : <FaPlusCircle/> } 
                 </motion.div>
+                <h3 className={`text-lg font-medium ${openIndex === index ? 'text-white' :'text-blue-950'  }`}>
+                  {faq.question}
+                </h3>
+                
               </div>
               <motion.div
                 initial={{ height: 0 }}
@@ -70,29 +118,13 @@ const FAQ = () => {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden"
               >
-                <p className="text-gray-600 px-4">{faq.answer}</p>
+                <p className="text-gray-600 p-6 bg-white rounded-b-2xl ">{faq.answer}</p>
               </motion.div>
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Right Section */}
-      <div className="md:w-1/2 flex flex-col items-center mt-8 md:mt-0">
-        <div className="mb-6">
-          <img
-            src="/doctor_patient.jpg"
-            alt="Doctors"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="bg-blue-100 text-blue-600 px-6 py-4 rounded-lg shadow-md text-center">
-          <p className="text-2xl font-bold mb-2">99% Success</p>
-          <p>Get the best health care</p>
         </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default FAQ;
+}

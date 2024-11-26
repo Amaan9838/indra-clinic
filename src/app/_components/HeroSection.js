@@ -74,7 +74,7 @@ const HeroSection = () => {
       </div>
     </div>
     {/* Right Column */}
-    <div className="relative">
+    <div className="relative mx-6 sm:mx-auto">
       <div className="absolute inset-0 bg-blue-500/10 -skew-x-6 transform"></div>
       <img
         src="/dc2.png"

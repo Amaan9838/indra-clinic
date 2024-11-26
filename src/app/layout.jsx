@@ -1,5 +1,7 @@
 // import type { Metadata } from "next";
 import { Outfit } from 'next/font/google';
+import Navbar from "@/app/_components/Navbar";
+import Footer from "@/app/_components/Footer";
 
 import "./globals.css";
 
@@ -21,7 +23,9 @@ export default function RootLayout({
       <body
         className={`${raleway.className} antialiased`}
       >
+    <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

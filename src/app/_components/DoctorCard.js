@@ -8,7 +8,7 @@ const DoctorCard = () => {
       name: 'Dr. S.K Singh',
       degree: 'MBBS, DLO, DNB',
       role: 'ENT Specialist',
-      image: 'https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      image: 'https://img.freepik.com/free-photo/young-man-doctor-wearing-white-coat-stethoscope-looking-confident-with-crossed-arms-1_141793-12597.jpg?t=st=1732603634~exp=1732607234~hmac=59ea94ec92c8e1f63285fc68bd854408e6dcfa9ef3bec3a2cc5f271277e87ce1&w=996',
       social: [
         { icon: <FaFacebook size={20} />, link: '#' },
         { icon: <FaInstagram size={20} />, link: '#' },
@@ -19,7 +19,7 @@ const DoctorCard = () => {
       name: 'Dr. Pramod Singh',
       degree: 'MBBS, D.Ortho',
       role: 'Trauma & Joint Surgeon',
-      image: 'https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      image: 'https://img.freepik.com/free-photo/young-smiling-doctor-with-stethoscope_144627-25776.jpg?t=st=1732607251~exp=1732610851~hmac=dee24ada34790e9d1cb13f10b425dbb0bfff5049597fff8be8ec08af0c5c065b&w=360',
       social: [
         { icon: <FaFacebook size={20} />, link: '#' },
         { icon: <FaInstagram size={20} />, link: '#' },
