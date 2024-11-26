@@ -11,7 +11,7 @@ export default function FeatureStrip() {
 
   return (
     <div className="bg-blue-500 text-white py-4">
-      <div className="container mx-auto flex flex-wrap justify-center gap-4 sm:gap-6">
+      <div className="container mx-auto flex sm:flex-wrap flex-nowrap overflow-hidden justify-center gap-4 sm:gap-6">
         {features.map((feature, index) => (
           <div
             key={index}
