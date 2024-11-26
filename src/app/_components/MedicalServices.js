@@ -59,12 +59,12 @@ const MedicalServices = () => {
               <p className="text-sm sm:text-base text-gray-600">
                 {service.description}
               </p>
-              <a
+              {/* <a
                 href="#"
                 className="mt-4 inline-block text-blue-500 text-sm font-medium hover:underline"
               >
                 READ MORE
-              </a>
+              </a> */}
             </div>
           ))}
         </div>

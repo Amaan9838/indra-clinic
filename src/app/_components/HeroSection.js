@@ -58,7 +58,7 @@ const HeroSection = () => {
           </div>
           <div>
             <div className="text-sm text-gray-600">Call Us Now</div>
-            <div className="font-semibold">+91 (737) 622-3388</div>
+            <a href="tel:+917376223388" className="font-semibold">+91 (737) 622-3388</a>
           </div>
         </div>
       </div>
