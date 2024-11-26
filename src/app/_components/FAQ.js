@@ -65,8 +65,8 @@ const toggleAccordion = (index) => {
               <span className="text-slate-200">Patient Privacy and Data Security</span>
             </li>
           </ul>
-          <div className="flex flex-row gap-4">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-1">
+          <div className="flex sm:flex-row flex-col gap-4">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full sm:px-6 sm:py-1 px-3 py-2 ">
               Get in Touch Now &#x2022;
             </button>
             <div className="flex items-center space-x-3">
@@ -75,7 +75,7 @@ const toggleAccordion = (index) => {
               </div>
               <div>
                 <p>Call Us Now!</p>
-                <p className="font-bold">+91 987 9874 985</p>
+                <p className="font-bold">+91 (737) 622-3388</p>
               </div>
             </div>
           </div>

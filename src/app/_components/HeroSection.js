@@ -37,9 +37,9 @@ const HeroSection = () => {
         ensuring comprehensive care for all your health needs.
       </p>
       <div className="flex flex-wrap justify-center lg:justify-start gap-4 items-center">
-        <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors">
+        <a href="/services" className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors">
           Explore Services
-        </button>
+        </a>
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md">
             <svg
@@ -58,14 +58,14 @@ const HeroSection = () => {
           </div>
           <div>
             <div className="text-sm text-gray-600">Call Us Now</div>
-            <div className="font-semibold">+1 (123) 456-7890</div>
+            <div className="font-semibold">+91 (737) 622-3388</div>
           </div>
         </div>
       </div>
       <div className="grid grid-cols-2 gap-6 pt-6 text-center lg:text-left">
         <div>
-          <div className="text-4xl font-bold text-blue-500">50+</div>
-          <div className="text-gray-600">Specialized Doctors</div>
+          <div className="text-4xl font-bold text-blue-500">350+</div>
+          <div className="text-gray-600">Happy Patients</div>
         </div>
         <div>
           <div className="text-4xl font-bold text-blue-500">24/7</div>
