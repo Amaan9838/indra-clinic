@@ -8,12 +8,13 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Brand Section */}
         <div>
-          <h2 className="text-2xl font-bold">Promedi</h2>
+          <h2 className="text-2xl font-bold">Indra Clinic</h2>
           <p className="text-gray-400 mt-4">
-            Providing Expert Care with Compassionate Understanding. Your Health and Well-being Are
-            Our Top Priorities.
+          At Indra Clinic, we strive to provide
+exceptional healthcare service to our valued
+patients. 
           </p>
-          <button className="mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">
+          <button className="mt-6 bg-lime-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">
             Make an Appointment
           </button>
           <div className="flex space-x-4 mt-6 text-gray-400">
@@ -27,13 +28,11 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold">Our Links</h3>
           <ul className="mt-4 space-y-2 text-gray-400">
-            <li className="hover:text-white">About Us</li>
-            <li className="hover:text-white">Our Services</li>
-            <li className="hover:text-white">Expert Doctors</li>
-            <li className="hover:text-white">Pricing Plans</li>
+            {/* <li className="hover:text-white">About Us</li> */}
+            <li className="hover:text-white"><a href="/services">Our Services</a></li>
+            <li className="hover:text-white"><a href="/expert_doctors">Expert Doctors</a></li>
             <li className="hover:text-white">Ask A Question</li>
-            <li className="hover:text-white">Contact Us</li>
-            <li className="hover:text-white">Latest Blog</li>
+            <li className="hover:text-white"><a href="/ContactUs">Contact Us</a></li>
           </ul>
         </div>
 
@@ -55,18 +54,18 @@ const Footer = () => {
           <h3 className="text-xl font-semibold">Get In Touch</h3>
           <ul className="mt-4 space-y-4 text-gray-400">
             <li className="flex items-start space-x-2">
-              <HiOutlineLocationMarker size={24} className="text-blue-500" />
-              <span>1120 15th St BA 8412, Augusta, GA 30912, United States</span>
+              <HiOutlineLocationMarker size={56} className="text-blue-500" />
+              <span>Indra Clinic, Jawaharlal Nehru Rd, near Sangam Petrol Pump, Tagore Town, Prayagraj, Uttar Pradesh 211002</span>
             </li>
             <li className="flex items-center space-x-2">
               <HiOutlinePhone size={24} className="text-blue-500" />
-              <span>+1 (487) 654-8741, +1 (874) 698-7485</span>
+              <span>+91 (737) 622-3388</span>
             </li>
             <li className="flex items-center space-x-2">
               <HiOutlineMail size={24} className="text-blue-500" />
               <span>
-                infousa@promedi.com <br />
-                supportusa@promedi.com
+                contact@indraclinic.in <br />
+                vipinsinghald009@gmail.com
               </span>
             </li>
           </ul>
@@ -76,16 +75,16 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center text-gray-400">
         <p>
-          Copyright © 2024 <span className="text-blue-500">Promedi</span>. All Rights Reserved.
+          Copyright © 2024 <span className="text-blue-500">Indra Clinic</span>. All Rights Reserved.
         </p>
-        <div className="flex space-x-4 mt-4 sm:mt-0">
+        {/* <div className="flex space-x-4 mt-4 sm:mt-0">
           <a href="#" className="hover:text-white">
             Privacy Policy
           </a>
           <a href="#" className="hover:text-white">
             Terms Of Service
           </a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

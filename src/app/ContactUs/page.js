@@ -1,6 +1,6 @@
 // import React from "react";
 // import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import { FaRegCalendarAlt } from "react-icons/fa";
+import { FaRegClock } from "react-icons/fa";
 import { SlNote } from "react-icons/sl";
 import { CiStethoscope } from "react-icons/ci";
 import { LuPhoneCall } from "react-icons/lu";
@@ -67,8 +67,8 @@ const Map = () => {
                 </div>
               </a>
               <div className="flex items-start gap-4">
-                <div className="flex items-center justify-center w-16 h-12 bg-white rounded-full">
-                <SlNote color="#3B82FB" className="w-[20px] h-[20px]"/>
+                <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full">
+                <FaRegClock className="text-blue-400 h-8 w-8"/>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">Mon - Sat:</h3>

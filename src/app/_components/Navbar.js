@@ -63,35 +63,30 @@ export default function Header() {
         >
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-7 md:mt-0">
             <Link 
-              href="#" 
+              href="/" 
               className="relative inline-block text-black focus:outline-none before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 "
             >
               Home
             </Link>
             <Link 
-              href="#" 
+              href="/services" 
               className="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 "
             >
               Services
             </Link>
             <Link 
-              href="#" 
+              href="/expert_doctors" 
               className="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 "
             >
               Doctors
             </Link>
             <Link 
-              href="#" 
+              href="/ContactUs" 
               className="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 "
             >
-              Careers
+              Contact Us
             </Link>
-            <Link 
-              href="#" 
-              className="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600"
-            >
-              Blog
-            </Link>
+            
           </div>
         </div>
       </nav>
